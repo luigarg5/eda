@@ -116,8 +116,8 @@ public class Paciente implements Comparable<Paciente>  {
         if (this.estado < otro.estado) return -1;
         if (this.estado > otro.estado) return 1;
         
-        //Vamos a comparar dos pacientes con el mismo estado
-        //Primero si alguno de los dos pacientes es un niño
+        //Vamos a comparar dos pacientes con el mismo estado.
+        //Primero si alguno de los dos pacientes es un niño.
         if (this.edad < 15 || otro.edad < 15){
             int x = this.edad - otro.edad;
             if (x < 0) return -1;
@@ -132,7 +132,8 @@ public class Paciente implements Comparable<Paciente>  {
                 else return 0;
          }
          
-         //Sino se cumple lo de arriba sabemos que son iguales
+         /*Si no se cumple lo de arriba sabemos que son iguales
+           por lo que insertaremos detrás de otro.*/
          return 0;
         }
     /** Devuelve un String con los datos del paciente.
