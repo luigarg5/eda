@@ -113,9 +113,28 @@ public class Paciente implements Comparable<Paciente>  {
      *         paciente tiene mayor prioridad que otro y mayor que 0 en caso contrario
      */
     public int compareTo(Paciente otro) { 
-        /*COMPLETAR*/
-    }
-            
+        if (this.estado < otro.estado) return -1;
+        if (this.estado > otro.estado) return 1;
+        
+        //Vamos a comparar dos pacientes con el mismo estado
+        //Primero si alguno de los dos pacientes es un niño
+        if (this.edad < 15 || otro.edad < 15){
+            int x = this.edad - otro.edad;
+            if (x < 0) return -1;
+                else if (x > 0) return 1;
+                else return 0;
+        }
+         //Ahora si alguno de los dos pacientes es un anciano
+         if (this.edad > 65 || otro.edad > 65){
+             int x= this.edad - otro.edad;
+             if (x < 0) return 1;
+                else if ( x >0) return -1;
+                else return 0;
+         }
+         
+         //Sino se cumple lo de arriba sabemos que son iguales
+         return 0;
+        }
     /** Devuelve un String con los datos del paciente.
      *  @return Cadena de texto que describe al paciente actual
      */   
