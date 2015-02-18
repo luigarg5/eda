@@ -1,0 +1,68 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_25\bin\javadoc.exe
+-sourcepath
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda
+-source
+1.8
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda
+-d
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+-doctitle
+eda
+-windowtitle
+eda
+-author
+-version
+-nodeprecated
+-package
+-link
+http://download.oracle.com/javase/8/docs/api/
+aplicaciones.hospital
+<---- end of javadoc command ---->
+Loading source files for package aplicaciones.hospital...
+Constructing Javadoc information...
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Urgencias.java:3: error: package librerias.estructurasDeDatos.modelos does not exist
+import librerias.estructurasDeDatos.modelos.ColaPrioridad;
+                                           ^
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Urgencias.java:4: error: cannot find symbol
+import librerias.estructurasDeDatos.lineales.LPIColaPrioridad;
+                                            ^
+  symbol:   class LPIColaPrioridad
+  location: package librerias.estructurasDeDatos.lineales
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Urgencias.java:17: error: cannot find symbol
+    private ColaPrioridad<Paciente> cp;     // Cola de espera de los pacientes en una sala de urgencias
+            ^
+  symbol:   class ColaPrioridad
+  location: class Urgencias
+Standard Doclet version 1.8.0_25
+Building tree for all the packages and classes...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\Hospital.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\Paciente.html...
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Paciente.java:35: warning - @param argument "n" is not a parameter name.
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Paciente.java:35: warning - @param argument "ed" is not a parameter name.
+D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\aplicaciones\hospital\Paciente.java:35: warning - @param argument "es" is not a parameter name.
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\Urgencias.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\package-frame.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\package-summary.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\aplicaciones\hospital\package-tree.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\constant-values.html...
+Building index for all the packages and classes...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\overview-tree.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\index-all.html...
+Building index for all classes...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\allclasses-frame.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\allclasses-noframe.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\index.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\help-doc.html...
+Generating D:\UPV 2º Quatrimestre 2015\EDA\Practicas\eda\doc\stylesheet.css...
+6 warnings

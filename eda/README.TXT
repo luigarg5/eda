@@ -1,12 +1,13 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+*****************************************************
+**     Documentación proyecto prácticas de EDA     **     
+*****************************************************  
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
+PROJECT TITLE: Prácticas de EDA
+PURPOSE OF PROJECT: Académico
+DATE: 18/02/2015 
+VERSION: Version 0.1
+AUTHORS: Luis García Gómez
+EMAIL: luigarg5@ei.upv.es
+
 HOW TO START THIS PROJECT:
-AUTHORS:
 USER INSTRUCTIONS:
