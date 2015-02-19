@@ -18,7 +18,11 @@ public class LPIColaPrioridad<E extends Comparable<E>>
      *  @param e Elemento a agnadir a una Cola de Prioridad
      */
     public void insertar(E e) { 
-        /*COMPLETAR*/
+        inicio();
+        while (!esFin() && recuperar().compareTo(e) <= 0){
+            siguiente();
+        }
+            super.insertar(e);                      
     }
     
     /** SII !esVacia(): obtiene el Elemento con maxima prioridad de una CP 
