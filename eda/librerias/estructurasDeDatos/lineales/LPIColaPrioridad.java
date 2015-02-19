@@ -34,7 +34,7 @@ public class LPIColaPrioridad<E extends Comparable<E>>
      */
     public E eliminarMin() { 
         if (!esVacia()){
-            inicio();
+           inicio();
            E x = recuperar();
            eliminar();
            return x;
