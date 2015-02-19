@@ -25,7 +25,7 @@ public class PriorityQColaPrioridad<E extends Comparable<E> >
         //super(0);   //Puede que de error. DA ERROR!!!
         
         //Versión alternativa con el constructor por defecto del padre que crea Cola con 11 elementos.
-        //Luego se borran con el clear() del padre.
+        //Luego se borran con el clear() heredado del padre.
         //Llamada implicita al constructor del padre.
         
         //Recordemos que super() no se usa para invocar a los metodos heredados!!!
