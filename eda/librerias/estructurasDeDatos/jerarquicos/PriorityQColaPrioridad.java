@@ -1,20 +1,25 @@
 package librerias.estructurasDeDatos.jerarquicos;
 
 import librerias.estructurasDeDatos.modelos.*;
-/*COMPLETAR*/
+import java.util.PriorityQueue;
 
 /** Implementacion de una Cola de Prioridad mediante una PriorityQueue (Heap) 
  * @version Febrero 2015
  * @author Luis García Gómez
   */
 
-public class PriorityQColaPrioridad</*COMPLETAR*/> 
-    extends /*COMPLETAR*/
-    implements /*COMPLETAR*/ {
+ //Tiene que ser comparable, hereda de java.util.PriorityQueue e implementa ColaPrioridad.
+public class PriorityQColaPrioridad<E extends Comparable<E> >
+    extends PriorityQueue<E>
+    implements ColaPrioridad<E> {
 
-    
+    /*Sacado de la API de PriorityQueue.
+     * Usaremos el PriorityQueue(int initialCapacity) del padre para ponerle 0 elementos.
+     * Creates a PriorityQueue with the specified initial capacity that orders its elements
+     * according to their natural ordering.*/
+     
     /** crea una Cola de Prioridad (CP) vacia */
-    public PriorityQColaPrioridad() { /*COMPLETAR*/ }
+    public PriorityQColaPrioridad() { super(0); }
     
     /** atendiendo a su prioridad, inserta el Elemento e en una Cola de Prioridad (CP)
      *  @param e Elemento a agnadir a una Cola de Prioridad
