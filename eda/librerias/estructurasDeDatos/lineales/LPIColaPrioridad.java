@@ -22,7 +22,9 @@ public class LPIColaPrioridad<E extends Comparable<E>>
         while (!esFin() && recuperar().compareTo(e) <= 0){
             siguiente();
         }
-            super.insertar(e);                      
+            
+        //Invocamos el insertar del padre no el metodo heredado sobreescrito -> super().insertar(e)
+        super.insertar(e);                      
     }
     
     /** SII !esVacia(): obtiene el Elemento con maxima prioridad de una CP 
