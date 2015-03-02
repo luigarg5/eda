@@ -39,13 +39,12 @@ public class LPIColaPrioridad<E extends Comparable<E>>
      *  @return E Elemento con maxima prioridad de una CP
      */
     public E eliminarMin() { 
-        if (!esVacia()){
-           inicio();
-           E x = recuperar();
-           eliminar();
-           return x;
-        }
-        return null;
+      
+       inicio();
+       E x = recuperar();
+       eliminar();
+       return x;
+              
     }
     
     /** comprueba si una Cola de Prioridad esta vacia
